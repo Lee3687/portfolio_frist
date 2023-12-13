@@ -1,0 +1,322 @@
+
+
+@font-face {
+    font-family: 'NanumBarunGothicLight';
+    src: url(https://ahnshi.dothome.co.kr/fonts/NanumBarunGothicLight/NanumBarunGothicLight.eot);
+    src:
+        url(https://ahnshi.dothome.co.kr/fonts/NanumBarunGothicLight/NanumBarunGothicLight.eot?#iefix) format('embedded-opentype'),
+        url(https://ahnshi.dothome.co.kr/fonts/NanumBarunGothicLight/NanumBarunGothicLight.woff) format('woff'),
+        url(https://ahnshi.dothome.co.kr/fonts/NanumBarunGothicLight/NanumBarunGothicLight.ttf) format('truetype'),
+        url(https://ahnshi.dothome.co.kr/fonts/NanumBarunGothicLight/NanumBarunGothicLight.svg#NanumBarunGothicLight) format('svg');
+}
+@font-face {
+    font-family: 'NanumMyeongjo';
+    src: url(https://ahnshi.dothome.co.kr/fonts/NanumMyeongjo/NanumMyeongjo.eot);
+    src:
+        url(https://ahnshi.dothome.co.kr/fonts/NanumMyeongjo/NanumMyeongjo.eot?#iefix) format('embedded-opentype'),
+        url(https://ahnshi.dothome.co.kr/fonts/NanumMyeongjo/NanumMyeongjo.woff) format('woff'),
+        url(https://ahnshi.dothome.co.kr/fonts/NanumMyeongjo/NanumMyeongjo.ttf) format('truetype'),
+        url(https://ahnshi.dothome.co.kr/fonts/NanumMyeongjo/NanumMyeongjo.svg#NanumMyeongjo) format('svg');
+}
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: #444;
+  background: #f9f9f9;
+  font-family: 'NanumBarunGothicLight';
+  font-size: 16px;
+}
+
+header,section,article {
+  position: relative;
+  width: 100%;
+}
+
+header{
+    position: fixed;
+    height: 60px;
+    background-color: black;
+    overflow: hidden;
+    z-index: 3;
+}
+
+li{
+    list-style: none;
+}
+
+.inner{
+    overflow: hidden;
+    margin: auto;
+    width: 70%;
+    max-width: 1100px;
+    height: 100%;
+}
+.clear{
+    clear: both;
+}
+header .inner .logo{
+    float: left;
+    height: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 10%;
+    color: white;
+    font-size: 1.2em;
+    text-shadow:
+      0 0 0.5px #FFF, 0 0 0.5px #FFF,
+      0 0 0.5px #FFF, 0 0 0.5px #FFF,
+      0 0 0.5px #FFF, 0 0 0.5px #FFF;
+}
+header .inner .logo img{
+    float: left;
+    height: 100%;
+}
+header .inner .logo span{
+    display: block;
+    float: left;
+    position: relative;
+    max-width: 500px;
+    top:15px;
+    left: 5%;
+}
+header .inner nav{
+    height: 100%;
+    overflow: hidden;
+    margin-right: 5%;
+}
+
+header .inner nav .btn_nav{
+    margin: auto 10px;
+    color: white;
+    height: 100%;
+    float: right;
+    text-shadow:
+      0 0 0.5px #FFF, 0 0 0.5px #FFF,
+      0 0 0.5px #FFF, 0 0 0.5px #FFF,
+      0 0 0.5px #FFF, 0 0 0.5px #FFF;
+}
+header .inner nav .btn_nav:before{
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    content: "";
+}
+
+
+header .inner nav .btn_nav a{
+    text-decoration: none;
+    color: inherit;
+top: 50%;
+}
+.mainpage{
+
+    text-shadow:
+      0 0 1px #FFF, 0 0 1px #FFF,
+      0 0 1px #FFF, 0 0 1px #FFF,
+      0 0 1px #FFF, 0 0 1px #FFF;
+    height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1473186505569-9c61870c11f9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=e13cd0e5403fb38bf83e41255d915bc4');
+    background-position: center;
+    background-size: cover;
+}
+.mainpage .inner{
+    background-color: rgba(100, 100, 100, 0.4);
+    text-align: center;
+}
+.mainpage .inner .introduce{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 100%;
+    top: 50%;
+    overflow: hidden;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.mainpage .inner .introduce img{
+    width: 20%;
+}
+.mainpage .inner .introduce h1{
+    font-family: 'NanumMyeongjo';
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+.mainpage .inner .introduce h2{
+    font-size: 1.2em;
+}
+.bio{
+    background-color: black;
+    overflow: hidden;
+    height: 200px;
+}
+.bio .inner{
+    height: 100%;
+}
+.bio .inner .bio_sec{
+    height: 100%;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+.bio .inner .bio_sec .bio_pic{
+    text-align: right;
+    width: 30%;
+    float:left;
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.bio .inner .bio_sec .bio_pic img{
+    width: 100%;
+    max-width: 150px;
+}
+.bio .inner .bio_sec .bio_contents{
+    color: #AAA;
+    width: 70%;
+    padding-left: 5%;
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.skill{
+    margin: 150px 0px;
+}
+.skill .inner{
+    width: 70%;
+}
+.skill .inner .skill_sec .skill_title{
+    text-align: center;
+}
+.skill .inner .skill_sub_sec{
+    text-align: center;
+    margin: 50px auto;;
+    overflow: hidden;
+}
+.skill .inner .skill_sub_sec .tools_wrapper,
+.skill .inner .skill_sub_sec .knowledge_wrapper,
+.skill .inner .skill_sub_sec .others_wrapper{
+    width: 33%;
+    display: inline-block;
+    float: left;
+}
+
+.skill .inner .skill_sec .development_wrapper .developments {
+  position: relative;
+  width: 80%;
+  list-style-type: none;
+  margin: 50px auto 20px;
+}
+.skill .inner .skill_sec .development_wrapper .developments li {
+  width: 100%;
+}
+.skill .inner .skill_sec .development_wrapper .developments li .development_title{
+  color: #3c3c3c;
+  margin: 10px 0px;
+}
+.skill .inner .skill_sec .development_wrapper .developments li .development_title h3 {
+  display: inline-block;
+}
+.skill .inner .skill_sec .development_wrapper .developments li .development_title .percent {
+  position: absolute;
+  right: 20px;
+  font-size: 1.1em;
+}
+.skill .inner .skill_sec .development_wrapper .developments li .progress_bar {
+  background: #ececec;
+  position: relative;
+  width: 100%;
+  height: 10px;
+}
+.skill .inner .skill_sec .development_wrapper .developments li .progress_bar .progressbar {
+  background: #34495e;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+}
+.experience .inner{
+    max-width:880px;
+}
+.experience .inner .experience_wrapper .experience_title{
+    text-align: center;
+}
+
+.experience .inner .experience_wrapper .experience_contents .experience_content{
+    position: relative;
+    overflow: hidden;
+    margin: 30px 0px;
+}
+.experience .inner .experience_wrapper .experience_contents .experience_content .experience-text{
+    position: absolute;
+    left: 200px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.experience .inner .experience_wrapper .experience_contents .experience_content img{
+    width: 150px;
+    float: left;
+    margin: 20px;
+}
+.experience .inner .experience_wrapper .experience_contents .experience_content p{
+}
+.experience .inner .experience_wrapper .experience_contents .experience_content::after{
+    content: "";
+    clear: both;
+}
+
+.experience .inner .experience_wrapper .experience_contents .experience_content:last-child{
+    margin-bottom: 200px;
+}
+
+footer{
+    width: 100%;
+    margin-top: 100px;
+    height: 60px;
+    background-position: center;;
+    background-size: cover;
+    background-image: url('https://images.unsplash.com/photo-1473186505569-9c61870c11f9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=e13cd0e5403fb38bf83e41255d915bc4');
+    position: relative;
+    color: white;
+    text-shadow:
+    0 0 0.5px #000, 0 0 0.5px #000,
+    0 0 0.5px #000, 0 0 0.5px #000,
+    0 0 0.5px #000, 0 0 0.5px #000;
+}
+footer .contact{
+    text-align: right;
+    width: 100%;
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+footer .text{
+    width: 100%;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
